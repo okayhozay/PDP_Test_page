@@ -1,17 +1,12 @@
 .App {
   text-align: center;
+    display: flex;
+    background-color: white;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
+
 
 .App-header {
   background-color: #282c34;
@@ -20,19 +15,122 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(10px + 2vmin); 
+  color: black;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+:root {
+  --silver: rgb(224, 207, 207);
+}
+
+html {
+  font-family: Lato;
+}
+
+
+.CustomCardTitle {
+  font-size: 35px;
+}
+
+
+
+.ProductItem {
+  padding: 5px;
+  margin: 25px;
+  border: 10px solid var(--silver);
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  background-color: antiquewhite;
+  align-items:center;
+  width: 350px;
+  margin-bottom: 20px;
+  /* font-size: ; */
+
+}
+
+.ProductList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.Card .CardImg {
+  height: 200px;
+  object-fit: cover;
+}
+/* 
+.Card.Title {
+  font-size: 95px; 
+} */
+
+
+.ProductImage {
+  height: 250px; 
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.App {
+  display: flex;
+}
+
+
+
+.ProductListContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+
+
+.FacetsContainer {
+  width: 25%;
+  padding: 20px;
+}
+
+.Facet {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left; /* Align content to the left */
+}
+
+.Facet h3 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Facet ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Facet ul li {
+  margin-bottom: 5px;
+}
+
+.Facet label {
+  display: block;
+  margin-left: 5px;
+  cursor: pointer;
+  text-align: left; /* Align labels to the left */
+}
+
+.Facet label input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
 }
